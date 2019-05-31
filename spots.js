@@ -38,4 +38,11 @@ insert(data){
     
   }
   
+  inorder(node){
+    if(node!==null){
+   this.inorder(node.left);
+    console.log(node);
+    this.inorder(node.right);
+  }
+  }
 }
