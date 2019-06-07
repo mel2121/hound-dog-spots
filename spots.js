@@ -45,4 +45,12 @@ insert(data){
     this.inorder(node.right);
   }
   }
+  
+  postOrder(node){
+    if(node!==null){
+    console.log(node);
+      this.postOrder(node.left);
+      this.postOrder(node.right);
+    }
+  }
 }
